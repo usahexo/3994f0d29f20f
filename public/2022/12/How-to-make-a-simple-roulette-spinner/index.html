@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>How to make a simple roulette spinner | RAK Apparel Co</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">RAK Apparel Co</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-How-to-make-a-simple-roulette-spinner" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/12/How-to-make-a-simple-roulette-spinner/" class="article-date">
+  <time class="dt-published" datetime="2022-12-23T17:23:38.000Z" itemprop="datePublished">2022-12-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Casino-Games/">Casino Games</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      How to make a simple roulette spinner
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="How-to-make-a-simple-roulette-spinner"><a href="#How-to-make-a-simple-roulette-spinner" class="headerlink" title="How to make a simple roulette spinner"></a>How to make a simple roulette spinner</h1><p>In this tutorial, we will learn how to make a simple roulette spinner with React.</p>
+<p>To get started, we will create a new React project.</p>
+<p>mkdir roulette-spinner cd roulette-spinner npm init -y</p>
+<p>Next, we will install React and React DOM.</p>
+<p>npm install react npm install react-dom</p>
+<p>Now, we will create a file called App.js and add the following code to it.</p>
+<p>import React from ‘react’ ; import ReactDOM from ‘react-dom’ ; export default class App extends React . Component { constructor ( props ) { super ( props ) ; this . state = { result : ‘’ } ; } render ( ) { return ( &lt; div &gt; &lt; h2 &gt; Roulette Spinner &lt;/ h2 &gt; &lt; div className = “ container “ &gt; &lt; div className = “ row “ &gt; &lt; div className = “ col-md-12 col-sm-12 col-tiny-12 col-xs-12 “ &gt; &lt; h3 &gt; Please enter your number between 1 and 36: &lt;/ h3 &gt; &lt;/ div &gt; &lt;/ div &gt; &lt; div className = “ row mt-4 “ style =” margin - top : 4 px “ &gt; &lt; div className = “ col-md-12 col-sm - 12 col - tiny - 12 col - xs - 12 “ &gt; &lt; ul className = “ list-group list group with - arrows have - dismissible has - counter animate shake shake fadein right darken primary secondary lighten “ id = ‘spinners’ onClick = { this . toggle } dataSource = { [ { value : 1 , text : ‘Red’ } , { value : 2 , text : ‘Black’ } , { value : 3 , text : ‘Green’ } ] }&gt; &lt;/ ul &gt; &lt;/ div &gt; &lt;/ div &gt; &lt;/ div &gt; ) ; } toggle ( ) { this . setState ( prevState =&gt; ({ result : prevState . result + this . state . result })) ; } } App . propTypes = { number : React . PropTypes . number . isRequired } ;</p>
+<p>We will also need to include a stylesheet.</p>
+<p>style.css</p>
+<p> *{ margin: 0; padding: 0; box-sizing: border-box; font: inherit; vertical-align: baseline;} body{ background: #fff;} h2{ font: 2rem/1.875 sans-serif;} ul{ list-style: none;} li{ display: inline-block; margin: 0.5rem 0;} a{ cursor: pointer;} #spinners{ margin: 0 auto; width: 100%; height: 300px;}</p>
+<p>Now, we can run the project by typing npm start in the terminal.</p>
+<p>We will now see our simple roulette spinner.</p>
+<p>To use the spinner, we simply need to type in a number between 1 and 36 into the input field and click on the spin button. The spinner will then randomly generate a number and display the result next to it.</p>
+<h1 id="How-to-make-a-more-complex-roulette-spinner"><a href="#How-to-make-a-more-complex-roulette-spinner" class="headerlink" title="How to make a more complex roulette spinner"></a>How to make a more complex roulette spinner</h1><p>In this article, we are going to create a more complex roulette spinner. This will allow us to have more control over what is happening in our game.</p>
+<h2 id="The-basics"><a href="#The-basics" class="headerlink" title="The basics"></a>The basics</h2><p>We are going to need a few basic pieces of code to get started. The first is the <code>spin</code> function. This will be used to control the rotation of the roulette wheel.</p>
+<p>Next, we need an array to store the values that we want to use in our game. We can create this variable anywhere in our code, but for now, let’s put it at the top of our file:</p>
+<p>var colors = [‘black’,’red’,’green’,’blue’];</p>
+<p>Now that we have our basic setup in place, let’s start creating our spinner. We’ll need an HTML element to act as our container, and we’ll also need some CSS styling to make it look nice:</p>
+<div class="spinners"> <div></div> </div> .spinners { width:500px; height:500px; border:1px solid black; } .spinners div { height:100px; width:100px; background-color:transparent;}
+
+<p>We’ll also need some JavaScript code to control the rotation of the wheel and randomly select a color from our array. Let’s add this code below our CSS:</p>
+<p>function spin() { var c = colors[Math.floor(Math.random()*colors.length)]; document.getElementById(‘div’).style.backgroundColor = c; setTimeout(function(){spin();}, 1500); } spin();</p>
+<h1 id="How-to-make-a-basic-roulette-spinner-for-kids"><a href="#How-to-make-a-basic-roulette-spinner-for-kids" class="headerlink" title="How to make a basic roulette spinner for kids"></a>How to make a basic roulette spinner for kids</h1><p>This project is a great way to teach kids about basic machines and how they work. Plus, it’s just plain fun! Kids will enjoy watching the roulette spinner spin around and around.</p>
+<p>You will need:</p>
+<p>A Pringles can<br> A CD or DVD<br>A scissor or sharp knife<br>A drill with a 3/8” bit<br>A jigsaw with a fine-tooth blade</p>
+<ol>
+<li>Start by cutting the top off of the Pringles can using the scissor or sharp knife. Make sure to cut it evenly so that the lid will fit back on later. Discard the top.</li>
+<li>Next, use the drill to make two holes in the bottom of the can, one on either side. The holes should be about 1/2” from the edge of the can and should be big enough for the CD or DVD to fit through snugly. </li>
+<li>Use the jigsaw to cut a slit in the side of the can, starting at one hole and going all the way to the other hole. The slit should be about 1” wide. </li>
+<li>Finally, put the CD or DVD into one of the holes in the bottom of the can and put the lid back on top. Now you’re ready to play!</li>
+</ol>
+<h1 id="How-to-make-a-more-advanced-roulette-spinner-for-kids"><a href="#How-to-make-a-more-advanced-roulette-spinner-for-kids" class="headerlink" title="How to make a more advanced roulette spinner for kids"></a>How to make a more advanced roulette spinner for kids</h1><p>In this article, we will be making a more advanced roulette spinner for kids. This spinner will have more gears and will be a bit more challenging to make.</p>
+<p>To make this spinner, you will need the following materials:</p>
+<ul>
+<li><p>A piece of cardboard or paper</p>
+</li>
+<li><p>A pencil</p>
+</li>
+<li><p>A marker or some other way to draw on the cardboard/paper</p>
+</li>
+<li><p>Scissors</p>
+</li>
+<li><p>4 skewers or toothpicks</p>
+</li>
+<li><p>A rubber band</p>
+</li>
+<li><p>A small coin or washer</p>
+</li>
+<li><p>Tape (optional)</p>
+</li>
+</ul>
+<p>   Step 1: Draw a Circle</p>
+<p>  To start off, we need to draw a circle on our cardboard or paper. You can use any method you want to do this, but I recommend using a compass if you have one. If you don’t have a compass, you can try using a ruler and a string. Once you have drawn your circle, cut it out with scissors.</p>
+<p>   Step 2: Cut out Sixteen Triangles</p>
+<p>  Next, we are going to cut out sixteen triangles from our circle. You can do this by drawing lines from the edge of the circle to the center, and then cutting along those lines. Make sure that the triangles are all equal in size.</p>
+<p>   Step 3: Mark the Centers of Each Triangle</p>
+<p>  Now that we have our sixteen triangles, we need to mark the centers of each one. To do this, simply find the middle point of each triangle and mark it with a pencil or pen.</p>
+<h1 id="How-to-make-a-DIY-roulette-spinner"><a href="#How-to-make-a-DIY-roulette-spinner" class="headerlink" title="How to make a DIY roulette spinner"></a>How to make a DIY roulette spinner</h1><p>Making your own roulette spinner is a fun and easy project that can be completed in just a few hours. This guide will show you how to create a basic spinner using a few simple materials and tools.</p>
+<p>You will need:</p>
+<p>-Thin cardboard or stiff paper<br>-A ruler or other straight edge<br>-A pen or pencil<br>-A sharp knife<br>-Scissors<br>-Paint or markers (optional)</p>
+<ol>
+<li><p>Use the ruler to draw a square on the cardboard or paper, measuring about 2 inches by 2 inches. Cut out the square using the scissors.</p>
+</li>
+<li><p>On one side of the square, use the pen or pencil to make four evenly spaced marks around the edge, each measuring ½ inch from the edge. Connect the marks with diagonal lines to form a cross in the middle of the square. Cut out this shape using the knife.</p>
+</li>
+<li><p>Turn over the piece of cardboard or paper and paint or color it if desired. Let it dry completely.</p>
+</li>
+<li><p>Tape one end of a long piece of string to the center of the cross on the back of the spinner. Tape or glue the other end of the string to a pencil or dowel rod.</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://rakapparelco.com/2022/12/How-to-make-a-simple-roulette-spinner/" data-id="clc0s7nmq0000rsv5fkprfzns" data-title="How to make a simple roulette spinner" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/12/New-Book-Reveals-How-to-Win-at-Online-Sports-Betting-/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">New Book Reveals How to Win at Online Sports Betting</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Baccarat-Site/" rel="tag">Baccarat Site</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bingo/" rel="tag">Bingo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blackjack/" rel="tag">Blackjack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bovada-Casino/" rel="tag">Bovada Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Casino-Game/" rel="tag">Casino Game</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Esports/" rel="tag">Esports</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Live-Casino/" rel="tag">Live Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Major-Site/" rel="tag">Major Site</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/On-Casino/" rel="tag">On Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Online-Casino/" rel="tag">Online Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Slot-Games/" rel="tag">Slot Games</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Slots/" rel="tag">Slots</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sports-Toto/" rel="tag">Sports Toto</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/12/How-to-make-a-simple-roulette-spinner/">How to make a simple roulette spinner</a>
+          </li>
+        
+          <li>
+            <a href="/2022/12/New-Book-Reveals-How-to-Win-at-Online-Sports-Betting-/">New Book Reveals How to Win at Online Sports Betting</a>
+          </li>
+        
+          <li>
+            <a href="/2022/12/Tigers%E2%80%99-Jose-Iglesias-Hits-Winning-3-Point-Shot-in-Final-Seconds-Over-Boston/">Tigers’ Jose Iglesias Hits Winning 3 Point Shot in Final Seconds Over Boston</a>
+          </li>
+        
+          <li>
+            <a href="/2022/12/Where-to-buy-the-best-game-of-thrones-slot-machine!/">Where to buy the best game of thrones slot machine!</a>
+          </li>
+        
+          <li>
+            <a href="/2022/12/MLS-to-Increase-Team-Rosters-to-26-Players/">MLS to Increase Team Rosters to 26 Players</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Apparel/">Apparel</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Casino-Game/">Casino Game</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Casino-Games/">Casino Games</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Chumba-Casino/">Chumba Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Doubleu-Casino/">Doubleu Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Gambling/">Gambling</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Rumble-Rumble-Game/">Rumble Rumble Game</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/doubleu-casino/">doubleu casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/gambling/">gambling</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li></ul>
+    </div>
+  </div>
+
+  
+  
+  <div class="widget-wrap">
+            <h3 class="widget-title">Links</h3>
+             <div class="widget">
+                <ul>
+                    
+                    <li><a target="_blank" rel="noopener" href="https://choegocasino.com/" class="animsition-link">카지노사이트</a></li>
+                    
+                </ul>
+             </div>
+</div>
+            
+</aside>
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2022 By Autoload<br>
+      Driven - <a href="https://rakapparelco.com" target="_blank">Wealthy Cooper</a>|Theme - <a href="https://rakapparelco.com" target="_blank">RAK Apparel Co</a>
+    </div>
+    <div id="footer-link" class="inner">
+      
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
