@@ -45,6 +45,118 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-How-to-make-a-simple-roulette-spinner" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/12/How-to-make-a-simple-roulette-spinner/" class="article-date">
+  <time class="dt-published" datetime="2022-12-23T17:23:38.000Z" itemprop="datePublished">2022-12-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Casino-Games/">Casino Games</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/12/How-to-make-a-simple-roulette-spinner/">How to make a simple roulette spinner</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="How-to-make-a-simple-roulette-spinner"><a href="#How-to-make-a-simple-roulette-spinner" class="headerlink" title="How to make a simple roulette spinner"></a>How to make a simple roulette spinner</h1><p>In this tutorial, we will learn how to make a simple roulette spinner with React.</p>
+<p>To get started, we will create a new React project.</p>
+<p>mkdir roulette-spinner cd roulette-spinner npm init -y</p>
+<p>Next, we will install React and React DOM.</p>
+<p>npm install react npm install react-dom</p>
+<p>Now, we will create a file called App.js and add the following code to it.</p>
+<p>import React from ‘react’ ; import ReactDOM from ‘react-dom’ ; export default class App extends React . Component { constructor ( props ) { super ( props ) ; this . state = { result : ‘’ } ; } render ( ) { return ( &lt; div &gt; &lt; h2 &gt; Roulette Spinner &lt;/ h2 &gt; &lt; div className = “ container “ &gt; &lt; div className = “ row “ &gt; &lt; div className = “ col-md-12 col-sm-12 col-tiny-12 col-xs-12 “ &gt; &lt; h3 &gt; Please enter your number between 1 and 36: &lt;/ h3 &gt; &lt;/ div &gt; &lt;/ div &gt; &lt; div className = “ row mt-4 “ style =” margin - top : 4 px “ &gt; &lt; div className = “ col-md-12 col-sm - 12 col - tiny - 12 col - xs - 12 “ &gt; &lt; ul className = “ list-group list group with - arrows have - dismissible has - counter animate shake shake fadein right darken primary secondary lighten “ id = ‘spinners’ onClick = { this . toggle } dataSource = { [ { value : 1 , text : ‘Red’ } , { value : 2 , text : ‘Black’ } , { value : 3 , text : ‘Green’ } ] }&gt; &lt;/ ul &gt; &lt;/ div &gt; &lt;/ div &gt; &lt;/ div &gt; ) ; } toggle ( ) { this . setState ( prevState =&gt; ({ result : prevState . result + this . state . result })) ; } } App . propTypes = { number : React . PropTypes . number . isRequired } ;</p>
+<p>We will also need to include a stylesheet.</p>
+<p>style.css</p>
+<p> *{ margin: 0; padding: 0; box-sizing: border-box; font: inherit; vertical-align: baseline;} body{ background: #fff;} h2{ font: 2rem/1.875 sans-serif;} ul{ list-style: none;} li{ display: inline-block; margin: 0.5rem 0;} a{ cursor: pointer;} #spinners{ margin: 0 auto; width: 100%; height: 300px;}</p>
+<p>Now, we can run the project by typing npm start in the terminal.</p>
+<p>We will now see our simple roulette spinner.</p>
+<p>To use the spinner, we simply need to type in a number between 1 and 36 into the input field and click on the spin button. The spinner will then randomly generate a number and display the result next to it.</p>
+<h1 id="How-to-make-a-more-complex-roulette-spinner"><a href="#How-to-make-a-more-complex-roulette-spinner" class="headerlink" title="How to make a more complex roulette spinner"></a>How to make a more complex roulette spinner</h1><p>In this article, we are going to create a more complex roulette spinner. This will allow us to have more control over what is happening in our game.</p>
+<h2 id="The-basics"><a href="#The-basics" class="headerlink" title="The basics"></a>The basics</h2><p>We are going to need a few basic pieces of code to get started. The first is the <code>spin</code> function. This will be used to control the rotation of the roulette wheel.</p>
+<p>Next, we need an array to store the values that we want to use in our game. We can create this variable anywhere in our code, but for now, let’s put it at the top of our file:</p>
+<p>var colors = [‘black’,’red’,’green’,’blue’];</p>
+<p>Now that we have our basic setup in place, let’s start creating our spinner. We’ll need an HTML element to act as our container, and we’ll also need some CSS styling to make it look nice:</p>
+<div class="spinners"> <div></div> </div> .spinners { width:500px; height:500px; border:1px solid black; } .spinners div { height:100px; width:100px; background-color:transparent;}
+
+<p>We’ll also need some JavaScript code to control the rotation of the wheel and randomly select a color from our array. Let’s add this code below our CSS:</p>
+<p>function spin() { var c = colors[Math.floor(Math.random()*colors.length)]; document.getElementById(‘div’).style.backgroundColor = c; setTimeout(function(){spin();}, 1500); } spin();</p>
+<h1 id="How-to-make-a-basic-roulette-spinner-for-kids"><a href="#How-to-make-a-basic-roulette-spinner-for-kids" class="headerlink" title="How to make a basic roulette spinner for kids"></a>How to make a basic roulette spinner for kids</h1><p>This project is a great way to teach kids about basic machines and how they work. Plus, it’s just plain fun! Kids will enjoy watching the roulette spinner spin around and around.</p>
+<p>You will need:</p>
+<p>A Pringles can<br> A CD or DVD<br>A scissor or sharp knife<br>A drill with a 3/8” bit<br>A jigsaw with a fine-tooth blade</p>
+<ol>
+<li>Start by cutting the top off of the Pringles can using the scissor or sharp knife. Make sure to cut it evenly so that the lid will fit back on later. Discard the top.</li>
+<li>Next, use the drill to make two holes in the bottom of the can, one on either side. The holes should be about 1/2” from the edge of the can and should be big enough for the CD or DVD to fit through snugly. </li>
+<li>Use the jigsaw to cut a slit in the side of the can, starting at one hole and going all the way to the other hole. The slit should be about 1” wide. </li>
+<li>Finally, put the CD or DVD into one of the holes in the bottom of the can and put the lid back on top. Now you’re ready to play!</li>
+</ol>
+<h1 id="How-to-make-a-more-advanced-roulette-spinner-for-kids"><a href="#How-to-make-a-more-advanced-roulette-spinner-for-kids" class="headerlink" title="How to make a more advanced roulette spinner for kids"></a>How to make a more advanced roulette spinner for kids</h1><p>In this article, we will be making a more advanced roulette spinner for kids. This spinner will have more gears and will be a bit more challenging to make.</p>
+<p>To make this spinner, you will need the following materials:</p>
+<ul>
+<li><p>A piece of cardboard or paper</p>
+</li>
+<li><p>A pencil</p>
+</li>
+<li><p>A marker or some other way to draw on the cardboard/paper</p>
+</li>
+<li><p>Scissors</p>
+</li>
+<li><p>4 skewers or toothpicks</p>
+</li>
+<li><p>A rubber band</p>
+</li>
+<li><p>A small coin or washer</p>
+</li>
+<li><p>Tape (optional)</p>
+</li>
+</ul>
+<p>   Step 1: Draw a Circle</p>
+<p>  To start off, we need to draw a circle on our cardboard or paper. You can use any method you want to do this, but I recommend using a compass if you have one. If you don’t have a compass, you can try using a ruler and a string. Once you have drawn your circle, cut it out with scissors.</p>
+<p>   Step 2: Cut out Sixteen Triangles</p>
+<p>  Next, we are going to cut out sixteen triangles from our circle. You can do this by drawing lines from the edge of the circle to the center, and then cutting along those lines. Make sure that the triangles are all equal in size.</p>
+<p>   Step 3: Mark the Centers of Each Triangle</p>
+<p>  Now that we have our sixteen triangles, we need to mark the centers of each one. To do this, simply find the middle point of each triangle and mark it with a pencil or pen.</p>
+<h1 id="How-to-make-a-DIY-roulette-spinner"><a href="#How-to-make-a-DIY-roulette-spinner" class="headerlink" title="How to make a DIY roulette spinner"></a>How to make a DIY roulette spinner</h1><p>Making your own roulette spinner is a fun and easy project that can be completed in just a few hours. This guide will show you how to create a basic spinner using a few simple materials and tools.</p>
+<p>You will need:</p>
+<p>-Thin cardboard or stiff paper<br>-A ruler or other straight edge<br>-A pen or pencil<br>-A sharp knife<br>-Scissors<br>-Paint or markers (optional)</p>
+<ol>
+<li><p>Use the ruler to draw a square on the cardboard or paper, measuring about 2 inches by 2 inches. Cut out the square using the scissors.</p>
+</li>
+<li><p>On one side of the square, use the pen or pencil to make four evenly spaced marks around the edge, each measuring ½ inch from the edge. Connect the marks with diagonal lines to form a cross in the middle of the square. Cut out this shape using the knife.</p>
+</li>
+<li><p>Turn over the piece of cardboard or paper and paint or color it if desired. Let it dry completely.</p>
+</li>
+<li><p>Tape one end of a long piece of string to the center of the cross on the back of the spinner. Tape or glue the other end of the string to a pencil or dowel rod.</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://rakapparelco.com/2022/12/How-to-make-a-simple-roulette-spinner/" data-id="clc0s7nmq0000rsv5fkprfzns" data-title="How to make a simple roulette spinner" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-New-Book-Reveals-How-to-Win-at-Online-Sports-Betting-" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/12/New-Book-Reveals-How-to-Win-at-Online-Sports-Betting-/" class="article-date">
@@ -671,80 +783,6 @@
 
 
   
-    <article id="post-Washington-State-Gambling-Earnings-Regulations-Released-" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/11/Washington-State-Gambling-Earnings-Regulations-Released-/" class="article-date">
-  <time class="dt-published" datetime="2022-11-28T13:39:15.000Z" itemprop="datePublished">2022-11-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/gambling/">gambling</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/11/Washington-State-Gambling-Earnings-Regulations-Released-/">Washington State Gambling Earnings Regulations Released</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="Washington-State-Gambling-Earnings-Regulations-Released"><a href="#Washington-State-Gambling-Earnings-Regulations-Released" class="headerlink" title="Washington State Gambling Earnings Regulations Released"></a>Washington State Gambling Earnings Regulations Released</h1><p>On Wednesday, the Washington State Gambling Commission released its annual report on gambling earnings. The report found that the state earned over $1.02 billion in gambling taxes and fees last year. This is a 5% increase from the $970 million generated in 2017.</p>
-<p>The majority of the revenue came from tribal casinos, which accounted for $874 million or 85% of all earnings. Lotteries were the next biggest earners, bringing in almost $142 million. This was followed by racetracks and card clubs, which generated just over $11 million and $3 million respectively.</p>
-<p>The gambling commission attributed the increase to continued growth in tribal casino revenue and the expansion of legal gambling options in the state. They also highlighted the importance of providing responsible gaming options and education to protect consumers.</p>
-<p>Gambling has long been an important part of Washington’s culture and economy. With over two dozen tribes operating casinos, it is one of the most heavily gambled states in the country. In addition to generating significant tax revenue, tribal casinos also provide employment and support to local communities.</p>
-<p>While there have been concerns about gambling addiction and its impact on families, overall the industry has been a positive force for the state. With revenues continuing to grow, it looks like this will continue to be the case for years to come.</p>
-<h1 id="Washington-Clarifies-Gambling-Tax-Rules"><a href="#Washington-Clarifies-Gambling-Tax-Rules" class="headerlink" title="Washington Clarifies Gambling Tax Rules"></a>Washington Clarifies Gambling Tax Rules</h1><p>WASHINGTON, D.C. - The Internal Revenue Service has announced new rules for the taxation of gambling winnings and losses. The clarification comes after a series of questions from taxpayers and tax professionals regarding the taxation of winnings from lotteries, casinos, and other gambling activities.</p>
-<p>The new rules state that all gambling winnings are taxable income, and must be reported on your tax return. This includes winnings from lotteries, casinos, horse races, and other wagers. Gambling losses can be deducted as an itemized deduction on your tax return, but only to the extent of your gambling winnings.</p>
-<p>For example, if you have $1,000 in gambling winnings and $500 in gambling losses, you can only deduct $500 of your losses on your tax return. If you have $5,000 in gambling winnings and $2,000 in gambling losses, you can’t deduct any of your losses on your tax return.</p>
-<p>The new rules also clarify that playing poker or other card games for money is considered gambling activity. You must report all of your poker winnings as taxable income, even if you don’t receive a Form W-2G showing the amount of the winning. However, you can’t deduct any of your poker losses on your tax return.</p>
-<p>The IRS also issued guidance regarding the taxation of state lottery prizes. The guidance states that state lottery prizes are always taxable income, regardless of whether the prize is paid in a lump sum or over time. State lottery commissions are required to report the full amount of any prize over $600 to the IRS and to the winner.</p>
-<h1 id="What-Are-The-Rules-On-Declaring-Gambling-Earnings-In-Washington-State"><a href="#What-Are-The-Rules-On-Declaring-Gambling-Earnings-In-Washington-State" class="headerlink" title="What Are The Rules On Declaring Gambling Earnings In Washington State?"></a>What Are The Rules On Declaring Gambling Earnings In Washington State?</h1><p>If you are a Washington State resident who has earned income from gambling, you must report this income on your state tax return. The good news is that gambling losses can be deducted from the income you report, so long as you itemize your deductions.</p>
-<p>There are specific rules that apply to gambling income and deductions, so it is important to understand what is required in order to properly report your earnings. Here is a breakdown of the basics: </p>
-<ol>
-<li>Gambling income includes winnings from lotteries, raffles, horse races, and casinos, as well as payments for services rendered as a professional gambler. </li>
-<li>Gambling losses can only be deducted if they are incurred in the same year as the gambling income is reported. </li>
-<li>You can only deduct losses up to the amount of your gambling income. </li>
-<li>Gambling winnings are considered taxable income and must be reported regardless of whether they are distributed or not. </li>
-<li>You must have documentation to support any gambling losses you claim on your tax return. This could include items like receipts, tickets, or other proof of payment. </li>
-<li>Professional gamblers should keep track of their net winning or losing streak during the year to help determine if they have met the criteria for gambling gains/losses”.</li>
-</ol>
-<h1 id="How-To-Declare-Gambling-Winnings-In-Washington-State"><a href="#How-To-Declare-Gambling-Winnings-In-Washington-State" class="headerlink" title="How To Declare Gambling Winnings In Washington State"></a>How To Declare Gambling Winnings In Washington State</h1><p>If you are a Washington State resident and you’ve won money while gambling, you may be wondering how to report those winnings on your state tax return. Luckily, the process is relatively simple.</p>
-<p>To declare your gambling winnings, you will need to complete IRS Form 1040, Schedule 1. On this form, you will report both your gambling income and losses.</p>
-<p>Gambling income includes not only the amount of money that you won while gambling, but also any prizes or awards that you received as a result of your gambling activities. This can include things like free hotel rooms or meals that were provided to you by the casino.</p>
-<p>In order to report your gambling losses, you will need to keep track of all of your wagers and subtract them from your winnings. You can deduct losses up to the amount of your winnings. So if you had $1,000 in winnings and $2,000 in losses, you would only be able to deduct $1,000 on your tax return.</p>
-<p>Washington State does not have a specific deduction for gambling losses, but you can still claim this deduction on your federal tax return. To do so, you will need to complete IRS Form 4797. This form is used to report gains and losses from sources such as stocks, bonds, and yes – gambling income.</p>
-<p>When filing your federal tax return, be sure to use the same method for reporting your gambling income and losses that you use on your Washington State tax return. This will help ensure that everything is reported correctly.</p>
-<p>For more information on how to report gambling income and losses in Washington State, visit the Washington State Department of Revenue website or consult with a qualified tax professional.</p>
-<h1 id="Washington-Updates-Rules-For-Gambling-Income"><a href="#Washington-Updates-Rules-For-Gambling-Income" class="headerlink" title="Washington Updates Rules For Gambling Income"></a>Washington Updates Rules For Gambling Income</h1><p>The state of Washington has released updates to the rules governing how gambling income is taxed. The new rules go into effect on January 1, 2018.</p>
-<p>Under the old rules, gambling income was taxable as regular income. This meant that taxpayers would have to pay taxes on winnings at their regular tax rate.</p>
-<p>The new rules allow taxpayers to deduct gambling losses from their taxable income. This means that taxpayers who suffer losses can offset those losses against any gambling winnings they may have.</p>
-<p>The new rules also create a separate category for gambling income. This means that gambling income will be taxed at a different rate than regular income. The exact tax rate will depend on the amount of gambling income earned in a year.</p>
-<p>Washington is the first state in the country to adopt these updated rules. Other states are likely to follow suit in the coming years.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://rakapparelco.com/2022/11/Washington-State-Gambling-Earnings-Regulations-Released-/" data-id="clb0u6sqs0000xov52kzfalon" data-title="Washington State Gambling Earnings Regulations Released" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -771,6 +809,10 @@
       <ul>
         
           <li>
+            <a href="/2022/12/How-to-make-a-simple-roulette-spinner/">How to make a simple roulette spinner</a>
+          </li>
+        
+          <li>
             <a href="/2022/12/New-Book-Reveals-How-to-Win-at-Online-Sports-Betting-/">New Book Reveals How to Win at Online Sports Betting</a>
           </li>
         
@@ -784,10 +826,6 @@
         
           <li>
             <a href="/2022/12/MLS-to-Increase-Team-Rosters-to-26-Players/">MLS to Increase Team Rosters to 26 Players</a>
-          </li>
-        
-          <li>
-            <a href="/2022/12/Don't-know-what-hands-to-bet-Check-out-this-handy-chart!/">Don&#39;t know what hands to bet Check out this handy chart!</a>
           </li>
         
       </ul>
